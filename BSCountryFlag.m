@@ -1,12 +1,10 @@
 //
-//  BSFlags.m
-//  MarathonApp
+//  BSCountryFlag.m
 //
 //  Created by Blazej SLEBODA on 21/11/2016.
-//  Copyright © 2016 Marathon42K. All rights reserved.
 //
 
-#import "BSFlags.h"
+#import "BSCountryFlag.h"
 
 @interface BSCountryFlag ()
 
@@ -36,9 +34,9 @@
     NSString *firstUnicode = [self.unicodeDictionary objectForKey:firstLetter];
     NSString *secondUnicode = [self.unicodeDictionary objectForKey:secondLetter];
     
-    NSString *unicode = [NSString stringWithFormat:@"%@%@", firstUnicode,secondUnicode];
+    NSString *unicodeCountryFlag = [NSString stringWithFormat:@"%@%@", firstUnicode,secondUnicode];
     
-    return unicode;
+    return unicodeCountryFlag;
     
 }
 
